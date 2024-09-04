@@ -1,19 +1,21 @@
 :root {
 
     --colorFondo: #eae0e0;
+    --colorCards: rgb(210, 192, 192);
 }
 
 
 /*UTILIDADES*/
 
-.centrar-texto{
+.centrar-texto {
     text-align: center;
 }
-.capitalize{
+
+.capitalize {
     text-transform: capitalize;
 }
 
-.no-margen{
+.no-margen {
     margin: 0;
 }
 
@@ -52,13 +54,51 @@ body {
     gap: 20px;
     grid-column: 1/4;
 }
-.presentacion-info{
 
-    background-color: rgb(210, 192, 192);
+.presentacion-info {
+
+    background-color: var(--colorCards);
     border-radius: 17px;
 }
 
-.presentacion-info p{
+.presentacion-info p {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.idiomas {
+    grid-column: 1/4;
+    background-color: var(--colorCards);
+    border-radius: 17px;
+
+}
+
+.idiomas h2 {
+    margin: 8px;
+}
+
+.idiomas section {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.idiomas section div {
+    width: 70%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.idiomas section:last-child div {
+    width: 60%;
+}
+
+.idiomas section:first-of-type div {
+    width: 20%;
+}
+.titulo-idoma{
+    width: 80px;
 }
