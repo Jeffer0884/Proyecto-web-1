@@ -27,7 +27,7 @@ body {
 .grid-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1.5fr;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -70,6 +70,7 @@ body {
     grid-column: 1/4;
     background-color: var(--colorCards);
     border-radius: 17px;
+    height: max-content;
 
 }
 
@@ -102,3 +103,15 @@ body {
 .titulo-idoma{
     width: 80px;
 }
+
+.educacion{
+    grid-column: 1/4;
+    background-color: var(--colorCards);
+    border-radius: 17px;
+}
+.contenedor-ed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
