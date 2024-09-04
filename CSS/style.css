@@ -27,9 +27,11 @@ body {
 .grid-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .contenedor-img img {
@@ -100,18 +102,73 @@ body {
 .idiomas section:first-of-type div {
     width: 20%;
 }
-.titulo-idoma{
+
+.titulo-idoma {
     width: 80px;
 }
 
-.educacion{
+.educacion {
     grid-column: 1/4;
     background-color: var(--colorCards);
     border-radius: 17px;
+
 }
-.contenedor-ed{
+.tarjet-ed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-ed {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.intereses {
+    background-color: var(--colorCards);
+    border-radius: 17px;
+    grid-column: 1/3;
+
+}
+
+.intereses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.intereses-grid div {
+    background-color: rgb(231, 224, 224);
+    border-radius: 20px;
+    height: fit-content;
+
+}
+
+.habilidades-img {
+    width: 90%;
+    height: 2dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 224, 224);
+    margin: 0 auto;
+    border-radius: 17px;
+}
+
+.habilidades-img svg {
+
+    width: 60%;
+    height: 80%;
+}
+
+.habilidades {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--colorCards);
+    border-radius: 17px;
+}
