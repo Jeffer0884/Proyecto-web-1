@@ -2,10 +2,12 @@
 
     --colorFondo: #eae0e0;
     --colorCards: rgb(210, 192, 192);
+    --fuentePpal: "Roboto Slab", serif;
 }
-ul{
-    margin: 0!important;
-    padding: 10px!important;
+
+ul {
+    margin: 0 !important;
+    padding: 10px !important;
 }
 
 /*UTILIDADES*/
@@ -25,6 +27,7 @@ ul{
 
 body {
     background-color: var(--colorFondo);
+    font-family: var(--fuentePpal);
 }
 
 .grid-card {
@@ -118,6 +121,7 @@ body {
 
 }
 
+
 .tarjet-ed {
     display: flex;
     flex-direction: column;
@@ -146,6 +150,10 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.intereses-grid div p {
+    font-size: 14px;
 }
 
 .intereses-grid div {
@@ -228,10 +236,20 @@ li {
 }
 
 .contacto-img svg {
-
-
     width: 60%;
     height: 80%;
+}
+
+.interes-img {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.interes-img svg {
+    width: 50%;
+    height: 60%;
 }
 
 @media(min-width:768px) {
@@ -253,6 +271,11 @@ li {
         grid-area: edc;
     }
 
+    .tarjet-ed-txt {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
     .contenedor-ed {
         display: flex;
         flex-direction: row;
@@ -263,15 +286,30 @@ li {
     .tarjet-ed {
         flex-basis: calc(50% - 10px);
     }
-    .habilidades{
+
+    .habilidades {
         grid-area: habd;
     }
-    .con-icons{
+
+    .con-icons {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70px 70px;
-        
+        grid-template-rows: 100px 100px;
+        align-items: center;
+        margin: 0 10px;
+
     }
+
+    .habilidades-img {
+
+        width: 100%;
+        height: 70%;
+    }
+
+    .habilidades-img:last-of-type {
+        grid-column: 1/3;
+    }
+
     .idiomas {
         display: flex;
         justify-content: end;
@@ -291,7 +329,47 @@ li {
         grid-area: cont;
     }
 
+    .contacto-img {
+        margin-top: 25px;
+    }
+
     .intereses {
         grid-area: interes;
+    }
+
+    .intereses-grid div p {
+        font-size: 19px;
+    }
+
+
+
+    .intereses-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+    }
+
+    .intereses-grid div {
+        transition: padding 0.3s ease;
+    }
+
+    .intereses-grid div:hover {
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .tarjet-ed {
+        background-color: var(--colorFondo);
+        border-radius: 17px;
+        transition: padding 0.5s ease-in-out;
+    }
+
+    .tarjet-ed:hover {
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .tarjet-ed:last-child {
+        background-color: rgb(98, 210, 98);
     }
 }
