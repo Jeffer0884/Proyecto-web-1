@@ -241,11 +241,34 @@ li {
     border-radius: 17px;
 }
 
+.resume-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.resume-img svg {
+    width: 80%;
+    height: 60%;
+}
+
 .contacto-img svg {
     width: 60%;
     height: 80%;
 }
-
+.resumen-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media(width>=768px){
+    .resumen-list{
+        flex-direction: row;
+    }
+}
 .interes-img {
     display: flex;
     justify-content: center;
