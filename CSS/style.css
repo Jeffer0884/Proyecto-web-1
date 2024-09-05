@@ -1,8 +1,9 @@
 :root {
 
     --colorFondo: #eae0e0;
-    --colorCards: rgb(210, 192, 192);
+    --colorCards: rgb(217, 214, 214);
     --fuentePpal: "Roboto Slab", serif;
+
 }
 
 ul {
@@ -69,6 +70,7 @@ body {
 
     background-color: var(--colorCards);
     border-radius: 17px;
+    border: 1px solid black;
 }
 
 .presentacion-info p {
@@ -81,7 +83,7 @@ body {
     background-color: var(--colorCards);
     border-radius: 17px;
     height: max-content;
-
+    border: 1px solid black;
 }
 
 .idiomas h2 {
@@ -104,11 +106,11 @@ body {
 }
 
 .idiomas section:last-child div {
-    width: 60%;
+    width: 80%;
 }
 
 .idiomas section:first-of-type div {
-    width: 30%;
+    width: 50%;
 }
 
 .titulo-idoma {
@@ -119,7 +121,7 @@ body {
     grid-column: 1/4;
     background-color: var(--colorCards);
     border-radius: 17px;
-
+    border: 1px solid black;
 }
 
 
@@ -128,9 +130,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 0px 0px 5px 5px;
     background-color: var(--colorFondo);
     border-radius: 17px;
+    border: 0.5px solid black;
 }
 
 
@@ -154,12 +157,14 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border: 1px solid black;
 }
 
 .intereses-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    
 }
 
 .intereses-grid div p {
@@ -170,6 +175,8 @@ body {
     background-color: rgb(231, 224, 224);
     border-radius: 20px;
     height: fit-content;
+    margin: 0% 7px;
+    border: 0.5px solid black;
 }
 
 .habilidades-img {
@@ -203,12 +210,18 @@ body {
     gap: 10px;
     background-color: var(--colorCards);
     border-radius: 17px;
+    border: 1px solid black;
+}
+
+.con-icons div{
+    border: 0.5px solid black;
 }
 
 .resumen {
     grid-column: 2/4;
     background-color: var(--colorCards);
     border-radius: 17px;
+    border: 1px solid black;
 }
 
 li {
@@ -228,6 +241,7 @@ li {
     background-color: var(--colorCards);
     border-radius: 17px;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .contacto-img {
@@ -258,17 +272,20 @@ li {
     width: 60%;
     height: 80%;
 }
-.resumen-list{
+
+.resumen-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-@media(width>=768px){
-    .resumen-list{
+
+@media(width>=768px) {
+    .resumen-list {
         flex-direction: row;
     }
 }
+
 .interes-img {
     display: flex;
     justify-content: center;
@@ -311,7 +328,7 @@ li {
     }
 
     .tarjet-ed {
-        flex-basis: calc(50% - 10px);
+        flex-basis: calc(45% - 10px);
     }
 
     .habilidades {
